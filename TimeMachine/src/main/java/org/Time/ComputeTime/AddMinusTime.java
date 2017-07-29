@@ -42,6 +42,18 @@ public class AddMinusTime {
 		resTime = InTime + addition;
 		return resTime;
 	}
+	public Long plusFortnights(Long InTime, Long Count)
+	{
+		Long resTime = 0L;
+		Long addition = Count*plusWeeks(0L, 2L);
+		resTime = InTime + addition;
+		return resTime;
+	}
+	
+	/**
+	 * 
+	 * Minus start here
+	 */
 	public Long minusSeconds(Long InTime, Long Count)
 	{
 		Long resTime = 0L;
@@ -77,9 +89,12 @@ public class AddMinusTime {
 		resTime = InTime - subtraction;
 		return resTime;
 	}
-public static void main(String[] args) {
-	AddMinusTime amt = new AddMinusTime();
-	
-	System.out.println(amt.minusWeeks(0L, 1L)+" milliseconds");
-}
+	public Long minusFortnights(Long InTime, Long Count)
+	{
+		Long resTime = 0L;
+		Long subtraction = Count*plusWeeks(0L, 2L);
+		resTime = InTime - subtraction;
+		return resTime;
+	}
+
 }
