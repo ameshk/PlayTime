@@ -1,6 +1,10 @@
 package org.Time.ComputeTime;
 
 public class AddMinusTime {
+	/**
+	 * 
+	 * Plus start here
+	 */
 	public Long plusMilliseconds(Long InTime, Long Count)
 	{
 		Long resTime = 0L;
